@@ -1,0 +1,260 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+.container {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.header {
+    background-color: rgb(86, 219, 179);
+}
+.bar {
+    display: flex;
+    background-color: rgb(86, 219, 179);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+.header .title {
+    width: 35%;
+    color: rgb(253, 253, 253);
+}
+.nav {
+    margin: auto;
+    padding-top: 20px;
+    height:36px;
+    background-color: rgb(86, 219, 179);
+}
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+.nav ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.nav li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 4px;
+    text-shadow: 0.5px 0.5px 1px #303030;
+}
+.topnav {
+    display: none;
+}
+.contact {
+    display: flex;
+    background-color: rgb(86, 219, 179);
+}
+.contact h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: 0.5px 0.5px 1px #303030;
+}
+
+.contact .links {
+    padding-left:2%;
+}
+.box {
+    width: 33vw;
+    margin: 0;
+    padding-bottom: 2%;
+    text-align: center;
+    margin-top: 10px;
+}
+.contact .links  a{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: rgb(253, 253, 253);
+}
+.information-image  img{
+    float: right;
+}
+.dog-image {
+    margin: auto;
+    width: fit-content;
+}
+.body {
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 30px;
+}
+.column {
+    width: 40%;
+    margin: 10px;
+}
+.column hr {
+    width: 50px;
+    display: inline-block;
+}
+.information {
+    text-align: right;
+}
+.column small, p {
+    color: rgb(87, 87, 87);
+}
+.column p {
+    line-height: 25px;
+    font-size: 14px;
+}
+form .button {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    border: 2px solid rgba(43, 43, 43, 0.63);
+    padding: 10px;
+    box-shadow: 0 0px 4px rgb(0, 0, 0);
+    font-weight: bold;
+}
+form .button:hover {
+    box-shadow: 0 0px 8px rgb(0, 0, 0);
+}
+.footer {
+    background-color: rgb(134, 134, 134);
+    height: 70px;
+    clear: both;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+}
+.footer p {
+    color: rgb(212, 212, 212);
+    text-align: center;
+    font-size: 13px;
+}
+.footer .footer-container {
+    height: 30px;
+    background-color: rgb(59, 59, 59);
+    padding-bottom: 5px;
+}
+.footer .footer-links{
+    width: fit-content;
+    margin: auto;
+    height: 60px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.footer .footer-links a {
+    color: rgb(212, 212, 212);
+    margin-left: 30px;
+}
+@media only screen and (max-width: 1311px) {
+    .contact .box h2 {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 1112px) {
+    .header .dog-image img {
+        width: 100%;
+        height: 95%;
+        margin-top:10%;
+     }
+}
+@media only screen and (max-width: 960px) {
+    .bar {
+        flex-direction: column;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    .contact .box {
+        width: auto;
+        text-align: center;
+        padding: 0;
+        margin: 2px;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .column {
+        flex-direction: column;
+        width: auto;
+        text-align: center;
+        border: 2px solid #79797949;
+        border-radius: 4px;
+    }
+    .information {
+        width: auto;
+        text-align: center;
+    }
+    .nav ul li {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    form .button {
+        margin-bottom: 2%;
+    }
+    .information-image img {
+        width: 60%;
+        float: inherit;
+    }
+    .nav  {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .topnav {
+        display: block;
+    }
+    .bar {
+        display: none;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: rgb(86, 219, 179);
+        position: relative;
+      }
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      .topnav #myLinks {
+        display: none;
+      }
+      
+      /* Style navigation menu links */
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        height: 20px;
+      }
+      
+      /* Style the hamburger menu */
+      .topnav a.icon {
+        background: rgb(86, 219, 179);
+        display: block;
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 5vw;
+      }
+      .title img {
+          width: 60vw;
+      }
+      #myLinks a:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(86, 219, 179);
+        text-shadow: 0.5px 0.5px 1px rgb(57, 146, 119);
+      }
+      #myLinks i {
+          margin-left: 5px;
+      }
+}
+@media only screen and (max-width: 321px) {
+    .title img{
+        width: 100%;
+        padding: 0;
+    }
+    .nav  {
+        font-size: 10px;
+    }
+    .funding img {
+        width: 90%;
+    }
+}
+

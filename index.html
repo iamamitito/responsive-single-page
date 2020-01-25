@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <title>Mis Perris</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="bar">
+                <div class="title">
+                    <img src="images/logo.png" alt="">
+                </div> 
+                <div class="navbar">
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Quiénes somos</a></li>
+                            <li><a href="#">Servicios</a></li>
+                            <li><a href="#">Contáctanos</a></li>
+                        </ul>
+                    </nav>
+                </div> 
+            </div>
+            <div class="topnav">
+                    <div class="title">
+                            <img src="images/logo.png" alt="">
+                    </div> 
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="#"><i class="fas fa-home fa-lg"></i> Inicio</a>
+                    <a href="#"><i class="fas fa-paw fa-lg"></i> Quiénes somos</a>
+                    <a href="#"><i class="fas fa-hands-helping fa-lg"></i> Servicios</a>
+                    <a href="#"><i class="far fa-paper-plane fa-lg"></i> Contáctanos</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="sideBar()" onclick="changeIcon()">
+                    <i class="fas fa-bars fa-lg"></i>
+                </a>
+            </div>
+            <script>
+                function sideBar() {
+                    var x = document.getElementById("myLinks");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                        }
+                }
+
+                function changeIcon() {
+                    var x = document.getElementById("myLinks");
+                    if (x.class === "fas fa-bars fa-lg") {
+                        x.class = "fas fa-times fa-lg";
+                    } else {
+                        x.class === "fas fa-bars fa-lg";
+                        }
+                }
+            </script>
+            <! –– for mobiles ––>
+            <div class="dog-image">
+                <img src="images/perro.png" width="1100" height="435" alt="">
+            </div>    
+        </header>
+        <div class="contact">
+           <div class="box">
+               <h2>+56 9 98765431</h2>
+           </div>
+           <div class="box">
+               <h2>Rescate y adopción de perros callejeros</h2>
+           </div>
+           <div class="box links">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+            <a href="https://www.google.com.mx/?hl=es-419" target="_blank"><i class="fab fa-google-plus fa-3x"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+            <a href="https://www.google.com/intl/es/gmail/about/#" target="_blank"><i class="fas fa-envelope fa-3x"></i></a>
+           </div> 
+        </div>
+        <section class="body">
+            <div class="flex-container">
+                <div class="column">
+                    <div class="information">
+                        <h2>RESCATE</h2>
+                        <small>ETAPA 1</small><br>
+                        <hr>
+                        <p>Rescatamos perros en situación de peligro y/o abandono. Los rehabilitamos y los preparamos para buscar un hogar.</p>
+                    </div>
+                    <div class="information-image">
+                        <img src="images/rescate.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="column funding">
+                    <div>
+                        <img src="images/crowfunding.jpg" width="300" height="250"  alt=""><br>
+                    </div>
+                    <div>
+                        <h2>CROWDFUNDING</h2>
+                        <small>FINANCIAMIENTO</small><br>
+                        <hr>
+                        <p>Sigue nuestras redes sociales para informarte acerca de las diversas campañar y actividades que realizaremos para obtener financiamiento para seguir ayudando.</p>
+                        <form action="other.html">
+                            <input type="submit" id="send" class="button" value="CAMPAÑAS">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+                <div class="footer-links">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="https://www.google.com.mx/?hl=es-419" target="_blank"><i class="fab fa-google-plus fa-lg"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://www.google.com/intl/es/gmail/about/#" target="_blank"><i class="fas fa-envelope fa-lg"></i></a>
+                </div>
+                <div class="footer-container">
+                    <p>Mis Perris&copy;</p>
+                </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
